@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.conatiner{
+    cursor: pointer;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)),url('Image/bg.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.inputField{
+    max-width: 450px;
+    max-height: 265px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 50px 60px 70px;
+    border-radius: 22px;
+    height: 280px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+#title{
+    padding-bottom: 40px;
+    color: blue;
+    user-select: none;
+}
+.inputArea{
+    display: flex;
+    align-items: center;
+    background:#aeaeae;
+    margin: 12px 0;
+    width: 100%;
+    border-radius: 3px;
+}
+input{
+    padding: 15px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+.inputArea i{
+    padding-left: 15px;
+    color: #9999;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: none;
+    color: #3c00a0;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+}
+.btn button{
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    flex-basis: 48%;
+    cursor: pointer;
+    color: #fff;
+    background-color: #3c00a0;
+}
+
+.btn button.disable {
+    background: #eaeaea;
+    color: #555;
+}
